@@ -1,4 +1,4 @@
-import time
+wimport time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -44,7 +44,7 @@ def fpost(USRNAME, PASSWORD, TEXT, IMG_PATH):
 	text_driver = driver.find_element_by_xpath('//*[@id="v6_pl_content_publishertop"]/div/div[2]/textarea')
 	text_driver.send_keys(TEXT[1])
 	text_driver.send_keys(Keys.ENTER) # you may want to change lines
-	tpost_driver.send_keys(TEXT[2])
+	text_driver.send_keys(TEXT[2])
 
 	# pictures input
 	pic_driver = driver.find_element_by_name('pic1')
